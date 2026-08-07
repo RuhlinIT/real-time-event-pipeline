@@ -411,6 +411,26 @@ The Grafana dashboard visualizes real-time event throughput, event-type distribu
 
 The dashboard reads from `analytics.events_analytics`, which is populated through the Kafka → ClickHouse materialized-view ingestion path.
 
+### Pipeline reconciliation
+
+The project includes separate operational and analytics checks:
+
+```text
+MongoDB outbox published count:  23
+ClickHouse analytics row count: 23
+```
+
+This confirms published outbox events are reaching Kafka and persisting in ClickHouse.
+
+```bash
+curl http://localhost:3001/api/outbox/status
+
+docker exec pipeline-clickhouse clickhouse-client \
+  --user default \
+  --password password \
+  --query "SELECT count() FROM analytics.events_analytics"
+```
+
 ## Testing Failure Recovery
 
 Stop Kafka:
