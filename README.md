@@ -479,20 +479,6 @@ docker compose ps
 docker compose down -v
 ```
 
-## Documentation Roadmap
-
-As the project grows, add focused documents under `docs/`:
-
-```text
-docs/
-├── architecture.md          # Component design, data flow, trust boundaries
-├── event-contract.md        # Event schema, required fields, schema-version policy
-├── operations-runbook.md    # Kafka outage, poison message, replay, and reset procedures
-├── local-development.md     # Expanded macOS and Docker setup
-├── testing.md               # Unit, integration, failure-recovery, and load tests
-└── roadmap.md               # DLQ, idempotency, observability, and ML feature pipeline
-```
-
 ## Roadmap
 
 - [ ] Add `schemaVersion` to every event contract
@@ -505,4 +491,6 @@ docs/
 
 ## License
 
-Add a license before distributing or accepting outside contributions.
+This project is licensed under the [MIT License](LICENSE).
+
+The MIT License permits commercial use, modification, distribution, sublicensing, and private use, provided that the copyright notice and license text are included in copies or substantial portions of the software. The software is provided without warranty. [457]
