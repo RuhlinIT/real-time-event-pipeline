@@ -403,6 +403,14 @@ ORDER BY events DESC
 LIMIT 10
 ```
 
+## Analytics Dashboard
+
+The Grafana dashboard visualizes real-time event throughput, event-type distribution, recent event activity, and ClickHouse-backed analytics.
+
+![Grafana dashboard showing events per minute, event types, top event types, and recent pipeline events](screenshots/grafana-dashboard.png)
+
+The dashboard reads from `analytics.events_analytics`, which is populated through the Kafka → ClickHouse materialized-view ingestion path.
+
 ## Testing Failure Recovery
 
 Stop Kafka:
