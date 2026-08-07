@@ -493,4 +493,4 @@ docker compose down -v
 
 This project is licensed under the [MIT License](LICENSE).
 
-The MIT License permits commercial use, modification, distribution, sublicensing, and private use, provided that the copyright notice and license text are included in copies or substantial portions of the software. The software is provided without warranty. [457]
+The MIT License permits commercial use, modification, distribution, sublicensing, and private use, provided that the copyright notice and license text are included in copies or substantial portions of the software. The software is provided without warranty.
