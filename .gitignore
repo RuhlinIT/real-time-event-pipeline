@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+coverage/
+.vite/
+
+# Environment files and secrets
+.env
+.env.*
+!.env.example
+
+# MongoDB replica-set key material
+docker/mongodb/mongo-keyfile
+
+# Local operating system/editor files
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log*

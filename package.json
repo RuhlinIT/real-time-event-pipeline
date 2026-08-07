@@ -1,0 +1,20 @@
+{
+  "name": "real-time-event-pipeline",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Real-time event pipeline using React, Node.js, Kafka, ClickHouse, MongoDB, and Grafana",
+  "scripts": {
+    "dev:backend": "pnpm --filter backend dev",
+    "dev:frontend": "pnpm --filter frontend dev",
+    "build": "pnpm -r build",
+    "typecheck": "pnpm -r typecheck",
+    "infra:up": "docker compose up -d",
+    "infra:down": "docker compose down",
+    "infra:logs": "docker compose logs -f",
+    "status": "pnpm list --depth -1 -r"
+  },
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "packageManager": "pnpm@11.20.0"
+}
